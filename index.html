@@ -1,1 +1,875 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drzwi i Bramy Szczecin | Sprzedaż, Montaż, Automatyka i Szlabany - Smart Service</title>
+    <meta name="description" content="Autoryzowana sprzedaż i montaż drzwi, bram oraz automatyki w Szczecinie. Instalacja szlabanów i awaryjne otwieranie. Pogotowie serwisowe 24/7. Ponad 15 lat doświadczenia.">
+    <meta name="keywords" content="drzwi szczecin, bramy szczecin, automatyka do bram, szlabany szczecin, montaż bram, serwis bram, awaryjne otwieranie, napędy do bram, police, stargard">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Drzwi i Bramy Szczecin | Smart Service - Sprzedaż, Montaż, Automatyka">
+    <meta property="og:description" content="Autoryzowana sprzedaż i montaż drzwi, bram oraz automatyki w Szczecinie. Pogotowie serwisowe 24/7. Ponad 15 lat doświadczenia.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1622359573887-234b352125bb?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="Drzwi i Bramy Szczecin - Smart Service">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Drzwi i Bramy Szczecin | Smart Service">
+    <meta name="twitter:description" content="Autoryzowana sprzedaż i montaż drzwi, bram oraz automatyki w Szczecinie. Pogotowie serwisowe 24/7.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f97316'/><text x='50' y='72' font-size='60' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>D</text></svg>">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Drzwi i Bramy Szczecin - Smart Service",
+        "description": "Autoryzowana sprzedaż i montaż drzwi, bram oraz automatyki w Szczecinie. Instalacja szlabanów i awaryjne otwieranie. Pogotowie serwisowe 24/7.",
+        "telephone": "+48667223765",
+        "email": "smartservice@vp.pl",
+        "areaServed": ["Szczecin", "Police", "Stargard"],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Szczecin",
+            "addressCountry": "PL"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday"],
+                "opens": "09:00",
+                "closes": "14:00"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "3"
+        }
+    }
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#f97316',
+                        emergency: '#ef4444',
+                        info: '#3b82f6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'ping-slow': 'ping 2.5s cubic-bezier(0, 0, 0.2, 1) infinite',
+                        'count-up': 'countUp 2s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: 0, transform: 'translateY(24px)' },
+                            '100%': { opacity: 1, transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        html { scroll-behavior: smooth; }
+
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: linear-gradient(180deg, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.95) 100%), url('https://images.unsplash.com/photo-1622359573887-234b352125bb?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .opacity-0-init { opacity: 0; }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f8fafc; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        .nav-link-active { color: #f97316 !important; }
+
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; }
+        .faq-item.open .faq-answer { max-height: 300px; padding-top: 1rem; }
+        .faq-item.open .faq-icon { transform: rotate(180deg); }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-700 antialiased bg-white flex flex-col min-h-screen selection:bg-accent selection:text-white">
+    <!-- SKIP LINK -->
+    <a href="#tresc" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-[100] focus:bg-primary focus:text-white focus:px-6 focus:py-3 focus:rounded-br-xl focus:font-bold">Przejdź do treści</a>
+
+    <!-- NAWIGACJA -->
+    <nav id="navbar" class="bg-white/95 backdrop-blur-lg shadow-sm fixed w-full z-50 top-0 border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center text-lg md:text-2xl font-extrabold text-primary uppercase tracking-tight group">
+                        <div class="w-10 h-10 bg-gradient-to-br from-accent to-orange-600 text-white rounded-xl flex items-center justify-center mr-3 shadow-md group-hover:shadow-lg transition-all transform group-hover:-translate-y-0.5">
+                            <i class="fa-solid fa-door-open text-lg"></i>
+                        </div>
+                        <span>Drzwi i Bramy <span class="text-accent">Szczecin</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#uslugi" class="nav-link text-slate-600 hover:text-accent font-semibold transition-colors">Oferta</a>
+                    <a href="#dlaczego-my" class="nav-link text-slate-600 hover:text-accent font-semibold transition-colors">Dlaczego my</a>
+                    <a href="#realizacje" class="nav-link text-slate-600 hover:text-accent font-semibold transition-colors">Realizacje</a>
+                    <a href="#opinie" class="nav-link text-slate-600 hover:text-accent font-semibold transition-colors">Opinie</a>
+                    <a href="#faq" class="nav-link text-slate-600 hover:text-accent font-semibold transition-colors">FAQ</a>
+                    <a href="#kontakt" class="bg-primary text-white px-6 py-2.5 rounded-lg font-bold hover:bg-slate-800 transition-all shadow-md hover:shadow-xl transform hover:-translate-y-0.5">Wyślij Zgłoszenie</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" aria-label="Otwórz menu" aria-expanded="false" class="text-slate-600 hover:text-primary focus:outline-none p-2">
+                        <i id="menu-icon" class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-2xl absolute w-full text-center">
+            <a href="#uslugi" class="mobile-link block px-6 py-4 text-slate-700 hover:text-accent font-bold border-b border-slate-50 transition-colors">Oferta</a>
+            <a href="#dlaczego-my" class="mobile-link block px-6 py-4 text-slate-700 hover:text-accent font-bold border-b border-slate-50 transition-colors">Dlaczego my</a>
+            <a href="#realizacje" class="mobile-link block px-6 py-4 text-slate-700 hover:text-accent font-bold border-b border-slate-50 transition-colors">Realizacje</a>
+            <a href="#opinie" class="mobile-link block px-6 py-4 text-slate-700 hover:text-accent font-bold border-b border-slate-50 transition-colors">Opinie Klientów</a>
+            <a href="#faq" class="mobile-link block px-6 py-4 text-slate-700 hover:text-accent font-bold border-b border-slate-50 transition-colors">FAQ</a>
+            <a href="#kontakt" class="mobile-link block px-6 py-4 text-accent font-black bg-orange-50/50">Wyślij Zgłoszenie</a>
+        </div>
+    </nav>
+
+    <main id="tresc" class="flex-1">
+    <!-- SEKCJA GŁÓWNA (HERO) -->
+    <header class="hero-pattern text-white pt-48 pb-32 mt-16 flex flex-col items-center justify-center text-center overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center relative z-10">
+
+            <div class="flex flex-wrap justify-center gap-4 mb-8 w-full opacity-0-init animate-fade-in-up" style="animation-delay: 0.1s;">
+                <span class="inline-flex items-center bg-emergency/10 backdrop-blur-md text-red-400 border border-red-500/30 px-5 py-2 rounded-full font-bold text-xs md:text-sm tracking-wider shadow-lg">
+                    <span class="w-2 h-2 rounded-full bg-emergency animate-pulse mr-2"></span> POGOTOWIE 24/7
+                </span>
+                <span class="inline-flex items-center bg-white/5 backdrop-blur-md text-slate-300 border border-white/10 px-5 py-2 rounded-full font-semibold text-xs md:text-sm tracking-wider">
+                    <i class="fa-solid fa-microchip mr-2 text-accent"></i> AUTORYZOWANA AUTOMATYKA
+                </span>
+                <span class="inline-flex items-center bg-white/5 backdrop-blur-md text-slate-300 border border-white/10 px-5 py-2 rounded-full font-semibold text-xs md:text-sm tracking-wider">
+                    <i class="fa-solid fa-stopwatch mr-2 text-accent"></i> SZYBKI DOJAZD DO KLIENTA
+                </span>
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1] opacity-0-init animate-fade-in-up" style="animation-delay: 0.3s;">
+                Niezawodne Drzwi, Bramy <br class="hidden md:block" />
+                i <span class="text-accent bg-clip-text text-transparent bg-gradient-to-r from-accent to-orange-400">Nowoczesna Automatyka</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed font-light opacity-0-init animate-fade-in-up" style="animation-delay: 0.5s;">
+                Dystrybucja urządzeń, profesjonalny montaż oraz obsługa największych inwestycji przemysłowych na terenie Polski i Europy.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-6 md:gap-10 mb-12 opacity-0-init animate-fade-in-up" style="animation-delay: 0.6s;">
+                <a href="#dlaczego-my" class="flex items-center text-sm text-slate-300 font-medium hover:text-white transition-colors">
+                    <i class="fa-solid fa-check-circle text-accent mr-2 text-lg"></i> Gwarancja jakości
+                </a>
+                <a href="#kontakt" class="flex items-center text-sm text-slate-300 font-medium hover:text-white transition-colors">
+                    <i class="fa-solid fa-stopwatch text-accent mr-2 text-lg"></i> Szybki dojazd
+                </a>
+                <a href="#dlaczego-my" class="flex items-center text-sm text-slate-300 font-medium hover:text-white transition-colors">
+                    <i class="fa-solid fa-shield-halved text-accent mr-2 text-lg"></i> Certyfikowany sprzęt
+                </a>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-5 w-full opacity-0-init animate-fade-in-up" style="animation-delay: 0.7s;">
+                <a href="tel:+48667223765" class="w-full sm:w-auto bg-gradient-to-r from-accent to-orange-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-orange-600 hover:to-orange-500 transition-all shadow-[0_0_20px_rgba(249,115,22,0.3)] flex items-center justify-center gap-3 transform hover:-translate-y-1">
+                    <i class="fa-solid fa-phone-volume"></i> +48 667 223 765
+                </a>
+                <a href="#realizacje" class="w-full sm:w-auto bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 transition-all flex items-center justify-center gap-3 transform hover:-translate-y-1 shadow-lg">
+                    <i class="fa-solid fa-camera"></i> Zobacz nasze realizacje
+                </a>
+            </div>
+
+            <p class="text-slate-400 text-sm mt-8 opacity-0-init animate-fade-in-up" style="animation-delay: 0.9s;">
+                <i class="fa-solid fa-users text-accent mr-2"></i> Zaufało nam już ponad <strong class="text-white">500 klientów</strong> w regionie
+            </p>
+        </div>
+    </header>
+
+    <!-- PASEK MAREK -->
+    <div class="bg-slate-50 border-b border-slate-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Pracujemy na sprzęcie sprawdzonych producentów</p>
+            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <span class="text-xl md:text-2xl font-black tracking-tighter text-slate-800">HÖRMANN</span>
+                <span class="text-xl md:text-2xl font-black tracking-wider text-slate-800 italic">FAAC</span>
+                <span class="text-xl md:text-2xl font-black tracking-widest text-slate-800">NICE</span>
+                <span class="text-xl md:text-2xl font-black tracking-tight text-slate-800">CAME</span>
+                <span class="text-xl md:text-2xl font-black tracking-wide text-slate-800">TECKENTRUP</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEKCJA STATYSTYK -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="text-4xl md:text-5xl font-extrabold text-accent mb-2 counter" data-target="15" data-suffix="+">0</div>
+                    <p class="text-slate-400 text-sm md:text-base font-medium">Lat doświadczenia</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="text-4xl md:text-5xl font-extrabold text-accent mb-2 counter" data-target="2000" data-suffix="+">0</div>
+                    <p class="text-slate-400 text-sm md:text-base font-medium">Zrealizowanych montaży</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="text-4xl md:text-5xl font-extrabold text-accent mb-2 counter" data-target="500" data-suffix="+">0</div>
+                    <p class="text-slate-400 text-sm md:text-base font-medium">Zadowolonych klientów</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="text-4xl md:text-5xl font-extrabold text-accent mb-2">24/7</div>
+                    <p class="text-slate-400 text-sm md:text-base font-medium">Dostępność serwisu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA USŁUG -->
+    <section id="uslugi" class="py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20 flex flex-col items-center">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-6 tracking-tight">Nasze Specjalizacje</h2>
+                <div class="w-16 h-1 bg-accent rounded-full mb-6 mx-auto"></div>
+                <p class="text-slate-500 max-w-2xl text-lg mx-auto">Od sprzedaży topowej automatyki, przez profesjonalny montaż, aż po ratunek w nagłych awariach. Wszystko w jednym miejscu.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Awaryjne Otwieranie -->
+                <div class="group bg-white p-10 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-10px_rgba(239,68,68,0.15)] border border-slate-100 transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden transform hover:-translate-y-2">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-emergency"></div>
+                    <div class="w-20 h-20 bg-red-50 text-emergency rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-emergency group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-primary">Awaryjne Otwieranie</h3>
+                    <p class="text-slate-500 leading-relaxed mb-8 flex-grow">Zgubiłeś klucz? Zamek się zaciął? Otwieramy drzwi, bramy i rolety bezinwazyjnie.</p>
+                    <span class="inline-flex items-center justify-center gap-2 text-emergency font-bold text-sm bg-red-50 px-4 py-1.5 rounded-full mt-auto"><i class="fa-solid fa-bolt"></i> Priorytet 24/7</span>
+                </div>
+                <!-- Dystrybucja Sprzętu -->
+                <div class="group bg-white p-10 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-10px_rgba(249,115,22,0.15)] border border-slate-100 transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden transform hover:-translate-y-2">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-accent"></div>
+                    <div class="w-20 h-20 bg-orange-50 text-accent rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-accent group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-cart-flatbed"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-primary">Dystrybucja Sprzętu</h3>
+                    <p class="text-slate-500 leading-relaxed mb-8 flex-grow">Handlujemy najwyższej klasy napędami, sterownikami oraz bramami (garażowe, przemysłowe) i solidnymi drzwiami.</p>
+                    <span class="inline-flex items-center justify-center gap-2 text-accent font-bold text-sm bg-orange-50 px-4 py-1.5 rounded-full mt-auto"><i class="fa-solid fa-award"></i> Autoryzowany dystrybutor</span>
+                </div>
+                <!-- Profesjonalny Montaż -->
+                <div class="group bg-white p-10 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-10px_rgba(15,23,42,0.1)] border border-slate-100 transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden transform hover:-translate-y-2">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+                    <div class="w-20 h-20 bg-slate-50 text-primary rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-primary">Profesjonalny Montaż</h3>
+                    <p class="text-slate-500 leading-relaxed mb-8 flex-grow">Instalacja urządzeń od podstaw. Wykonujemy ścisłe pomiary, dobieramy konstrukcje i kalibrujemy systemy u Klienta.</p>
+                    <span class="inline-flex items-center justify-center gap-2 text-primary font-bold text-sm bg-slate-50 px-4 py-1.5 rounded-full mt-auto"><i class="fa-solid fa-ruler"></i> Precyzyjna instalacja</span>
+                </div>
+                <!-- Montaż Szlabanów -->
+                <div class="group bg-white p-10 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-10px_rgba(249,115,22,0.15)] border border-slate-100 transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden transform hover:-translate-y-2">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-accent"></div>
+                    <div class="w-20 h-20 bg-orange-50 text-accent rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-accent group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-road-barrier"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-primary">Montaż Szlabanów</h3>
+                    <p class="text-slate-500 leading-relaxed mb-8 flex-grow">Zabezpieczamy tereny. Dostarczamy i instalujemy szlabany osiedlowe i parkingowe wraz z systemami kontroli dostępu.</p>
+                    <span class="inline-flex items-center justify-center gap-2 text-accent font-bold text-sm bg-orange-50 px-4 py-1.5 rounded-full mt-auto"><i class="fa-solid fa-shield"></i> Kontrola dostępu</span>
+                </div>
+                <!-- Naprawa i Serwis -->
+                <div class="group bg-white p-10 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-10px_rgba(15,23,42,0.1)] border border-slate-100 transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden transform hover:-translate-y-2">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+                    <div class="w-20 h-20 bg-slate-50 text-primary rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-primary">Naprawa i Serwis</h3>
+                    <p class="text-slate-500 leading-relaxed mb-8 flex-grow">Skuteczna wymiana pękniętych sprężyn, zerwanych linek, zużytych rolek oraz kompleksowa konserwacja mechaniczna.</p>
+                    <span class="inline-flex items-center justify-center gap-2 text-primary font-bold text-sm bg-slate-50 px-4 py-1.5 rounded-full mt-auto"><i class="fa-solid fa-screwdriver-wrench"></i> Naprawa u Klienta</span>
+                </div>
+                <!-- Serwis Napędów -->
+                <div class="group bg-white p-10 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-10px_rgba(249,115,22,0.15)] border border-slate-100 transition-all duration-300 flex flex-col items-center text-center relative overflow-hidden transform hover:-translate-y-2">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-accent"></div>
+                    <div class="w-20 h-20 bg-orange-50 text-accent rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:bg-accent group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-satellite-dish"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-primary">Serwis Napędów</h3>
+                    <p class="text-slate-500 leading-relaxed mb-8 flex-grow">Precyzyjna diagnoza elektroniki, kodowanie nowych pilotów, instalacja fotokomórek i nowoczesnych modułów Smart Home.</p>
+                    <span class="inline-flex items-center justify-center gap-2 text-accent font-bold text-sm bg-orange-50 px-4 py-1.5 rounded-full mt-auto"><i class="fa-solid fa-house-signal"></i> Smart Home ready</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA DLACZEGO MY -->
+    <section id="dlaczego-my" class="py-28 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20 flex flex-col items-center">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-6 tracking-tight">Dlaczego warto nam zaufać?</h2>
+                <div class="w-16 h-1 bg-accent rounded-full mb-6 mx-auto"></div>
+                <p class="text-slate-500 max-w-2xl text-lg mx-auto">Cztery filary, na których opiera się nasza praca. To one decydują o tym, że klienci do nas wracają.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg border border-slate-100 transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-orange-50 text-accent rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3 text-primary">Gwarancja na usługi</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Udzielamy gwarancji na każdy montaż i naprawę. Jeśli coś nie działa — wracamy i naprawiamy bezpłatnie.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg border border-slate-100 transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-orange-50 text-accent rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3 text-primary">Autoryzowany montaż</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Montaż drzwi, bram, rolet i szlabanów realizowany przez doświadczoną ekipę z 15-letnim stażem, zgodnie z normami i wytycznymi producentów.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg border border-slate-100 transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-orange-50 text-accent rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-box-archive"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3 text-primary">Oryginalne części</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Używamy wyłącznie oryginalnych części i napędów od sprawdzonych producentów. Bez kompromisów, bez zamienników.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg border border-slate-100 transition-all duration-300 transform hover:-translate-y-1 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-orange-50 text-accent rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-comments-dollar"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3 text-primary">Bezpłatna wycena</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Doradztwo i wycena kosztują zero. Przyjeżdżamy, mierzymy, doradzamy — a decyzja zawsze należy do Ciebie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA JAK PRACUJEMY -->
+    <section class="py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20 flex flex-col items-center">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-6 tracking-tight">Jak pracujemy?</h2>
+                <div class="w-16 h-1 bg-accent rounded-full mb-6 mx-auto"></div>
+                <p class="text-slate-500 max-w-2xl text-lg mx-auto">Cztery proste kroki od pierwszego kontaktu po spokojne użytkowanie. Bez ukrytych kosztów i niespodzianek.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+                <div class="flex flex-col items-center text-center relative">
+                    <div class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-extrabold mb-6 shadow-lg relative z-10">1</div>
+                    <h3 class="text-lg font-bold mb-3 text-primary">Kontakt</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Dzwonisz lub wypełniasz formularz. Opisujesz, czego potrzebujesz — my słuchamy.</p>
+                </div>
+                <div class="flex flex-col items-center text-center relative">
+                    <div class="w-20 h-20 bg-accent text-white rounded-full flex items-center justify-center text-2xl font-extrabold mb-6 shadow-lg relative z-10">2</div>
+                    <h3 class="text-lg font-bold mb-3 text-primary">Bezpłatna wycena</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Przyjeżdżamy na miejsce, mierzymy, doradzamy najlepsze rozwiązanie i podajemy transparentną cenę.</p>
+                </div>
+                <div class="flex flex-col items-center text-center relative">
+                    <div class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-extrabold mb-6 shadow-lg relative z-10">3</div>
+                    <h3 class="text-lg font-bold mb-3 text-primary">Montaż</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Wykonujemy instalację precyzyjnie i w terminie. Testujemy, kalibrujemy i pokazujemy jak obsługiwać.</p>
+                </div>
+                <div class="flex flex-col items-center text-center relative">
+                    <div class="w-20 h-20 bg-accent text-white rounded-full flex items-center justify-center text-2xl font-extrabold mb-6 shadow-lg relative z-10">4</div>
+                    <h3 class="text-lg font-bold mb-3 text-primary">Serwis pogwarancyjny</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Po montażu jesteśmy nadal obok. Gwarancja, przeglądy i pogotowie awaryjne 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA REALIZACJE -->
+    <section id="realizacje" class="py-28 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20 flex flex-col items-center">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-6 tracking-tight">Nasze Flagowe Realizacje</h2>
+                <div class="w-16 h-1 bg-accent rounded-full mb-6 mx-auto"></div>
+                <p class="text-slate-500 max-w-2xl text-lg mx-auto">Zaufali nam najwięksi. Z dumą prezentujemy inwestycje przemysłowe i obiekty użyteczności publicznej, w których odpowiadaliśmy za montaż i serwis.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-[2rem] shadow-lg border border-slate-100 overflow-hidden flex flex-col">
+                    <div class="h-64 w-full overflow-hidden relative bg-slate-200">
+                        <img src="https://images.pexels.com/photos/34207364/pexels-photo-34207364.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Montaż bram rolowanych w gigafabryce Tesla w Berlinie" loading="lazy" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4"><span class="bg-accent text-white text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full shadow-md">Przemysł</span></div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h4 class="text-primary font-extrabold text-2xl mb-2">Gigafactory Tesla</h4>
+                        <p class="text-slate-400 text-sm font-medium mb-4"><i class="fa-solid fa-location-dot mr-1 text-accent"></i> Berlin, Niemcy</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Współpraca przy rozbudowie gigafabryki. Wykonaliśmy kompleksowy <strong>montaż techniczny</strong> potężnych bram rolowanych oraz specjalistycznych drzwi technicznych na terenie obiektu.</p>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <span class="text-xs font-bold text-primary bg-slate-100 px-3 py-1.5 rounded-lg"><i class="fa-solid fa-door-closed mr-1 text-accent"></i> 30+ bram</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-[2rem] shadow-lg border border-slate-100 overflow-hidden flex flex-col">
+                    <div class="h-64 w-full overflow-hidden relative bg-slate-200">
+                        <img src="https://images.pexels.com/photos/36293741/pexels-photo-36293741.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Montaż atestowanych drzwi technicznych w Szczecińskim Domu Sportu" loading="lazy" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4"><span class="bg-primary text-white text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full shadow-md">Użyteczność Publiczna</span></div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h4 class="text-primary font-extrabold text-2xl mb-2">Szczeciński Dom Sportu</h4>
+                        <p class="text-slate-400 text-sm font-medium mb-4"><i class="fa-solid fa-location-dot mr-1 text-accent"></i> Szczecin</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Zajęliśmy się profesjonalnym, wieloetapowym <strong>montażem oraz obsługą serwisową</strong> ponad 100 sztuk atestowanych drzwi technicznych na obszarze całego kompleksu sportowego.</p>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <span class="text-xs font-bold text-primary bg-slate-100 px-3 py-1.5 rounded-lg"><i class="fa-solid fa-door mr-1 text-accent"></i> 100+ drzwi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-[2rem] shadow-lg border border-slate-100 overflow-hidden flex flex-col">
+                    <div class="h-64 w-full overflow-hidden relative bg-slate-200">
+                        <img src="https://images.pexels.com/photos/1291448/pexels-photo-1291448.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Instalacja i kalibracja drzwi technicznych w Aquaparku Fabryka Wody w Szczecinie" loading="lazy" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4"><span class="bg-primary text-white text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full shadow-md">Użyteczność Publiczna</span></div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h4 class="text-primary font-extrabold text-2xl mb-2">Aquapark Fabryka Wody</h4>
+                        <p class="text-slate-400 text-sm font-medium mb-4"><i class="fa-solid fa-location-dot mr-1 text-accent"></i> Szczecin</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Realizacja usług montażowych na potężną skalę. Przeprowadziliśmy <strong>instalację i kalibrację</strong> wszystkich drzwi technicznych w najnowocześniejszym obiekcie rekreacyjnym w regionie.</p>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <span class="text-xs font-bold text-primary bg-slate-100 px-3 py-1.5 rounded-lg"><i class="fa-solid fa-door mr-1 text-accent"></i> 110+ drzwi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-[2rem] shadow-lg border border-slate-100 overflow-hidden flex flex-col">
+                    <div class="h-64 w-full overflow-hidden relative bg-slate-200">
+                        <img src="https://images.pexels.com/photos/17158664/pexels-photo-17158664.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Serwis bram i szlabanów Współdzielni Mieszkaniowej Pomorska" loading="lazy" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4"><span class="bg-accent text-white text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full shadow-md">Współdzielnia</span></div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h4 class="text-primary font-extrabold text-2xl mb-2">Współdzielnia Mieszkaniowa Pomorska</h4>
+                        <p class="text-slate-400 text-sm font-medium mb-4"><i class="fa-solid fa-location-dot mr-1 text-accent"></i> Szczecin</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Stała współpraca serwisowa. <strong>Regularna konserwacja i naprawa</strong> bram oraz szlabanów na terenie osiedli zarządzanych przez współdzielnię. Zapewniamy sprawne działanie automatyki i szybkie reagowanie na usterki.</p>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <span class="text-xs font-bold text-primary bg-slate-100 px-3 py-1.5 rounded-lg"><i class="fa-solid fa-repeat mr-1 text-accent"></i> Stały serwis</span>
+                            <span class="text-xs font-bold text-primary bg-slate-100 px-3 py-1.5 rounded-lg"><i class="fa-solid fa-road-barrier mr-1 text-accent"></i> Bramy i szlabany</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-[2rem] shadow-lg border border-slate-100 overflow-hidden flex flex-col">
+                    <div class="h-64 w-full overflow-hidden relative bg-slate-200">
+                        <img src="https://images.pexels.com/photos/933718/pexels-photo-933718.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Serwis i konserwacja automatyki bramowej w obiekcie logistycznym" loading="lazy" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+                        <div class="absolute top-4 left-4"><span class="bg-primary text-white text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full shadow-md">Logistyka</span></div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <h4 class="text-primary font-extrabold text-2xl mb-2">Centrum Logistyczne DPD</h4>
+                        <p class="text-slate-400 text-sm font-medium mb-4"><i class="fa-solid fa-location-dot mr-1 text-accent"></i> Koszanowo</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Stała współpraca serwisowa. <strong>Regularna konserwacja</strong> 40 bram dokujących i rolowanych, wymiana napędów oraz diagnostyka elektroniki w obiekcie o ruchu 24-godzinnym.</p>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <span class="text-xs font-bold text-primary bg-slate-100 px-3 py-1.5 rounded-lg"><i class="fa-solid fa-truck-ramp-box mr-1 text-accent"></i> 40 bram dokowych</span>
+                            <span class="text-xs font-bold text-primary bg-slate-100 px-3 py-1.5 rounded-lg"><i class="fa-solid fa-repeat mr-1 text-accent"></i> Stały serwis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA OPINII -->
+    <section id="opinie" class="py-28 bg-white text-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="mb-20 flex flex-col items-center">
+                <div class="flex items-center gap-2 mb-4 bg-slate-50 px-4 py-2 rounded-full shadow-sm border border-slate-100">
+                    <span class="font-extrabold text-primary">5.0</span>
+                    <div class="flex text-amber-400 text-sm" aria-label="Ocena 5 na 5 gwiazdek">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="text-sm font-medium text-slate-500 ml-1">Średnia ocen klientów</span>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-6 tracking-tight">Co mówią o nas inni?</h2>
+                <div class="w-16 h-1 bg-accent rounded-full mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-10 rounded-3xl shadow-sm hover:shadow-lg border border-slate-100 flex flex-col items-start text-left transition-shadow">
+                    <div class="flex text-amber-400 text-sm mb-6" aria-label="5 gwiazdek">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 mb-8 leading-relaxed font-medium text-lg">"Kupiłem u nich kompletny zestaw napędowy do starej bramy. Fachowe doradztwo przy wyborze, a potem błyskawiczny montaż. Działa bezszelestnie."</p>
+                    <div class="mt-auto flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-primary text-lg">T</div>
+                        <div>
+                            <p class="font-bold text-primary">Tomasz K.</p>
+                            <p class="text-sm text-slate-400">Szczecin · Zakup napędu · Marzec 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-10 rounded-3xl shadow-sm hover:shadow-lg border border-slate-100 flex flex-col items-start text-left transition-shadow">
+                    <div class="flex text-amber-400 text-sm mb-6" aria-label="5 gwiazdek">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 mb-8 leading-relaxed font-medium text-lg">"Dostarczyli i zamontowali szlaban na naszym osiedlu. Automatyka w pełni zintegrowana z telefonami mieszkańców. Naprawdę świetna robota."</p>
+                    <div class="mt-auto flex items-center gap-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center font-bold text-accent text-lg">W</div>
+                        <div>
+                            <p class="font-bold text-primary">Wspólnota Mieszkaniowa</p>
+                            <p class="text-sm text-slate-400">Okolice Szczecina · Montaż szlabanu · Luty 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-10 rounded-3xl shadow-sm hover:shadow-lg border border-slate-100 flex flex-col items-start text-left transition-shadow">
+                    <div class="flex text-amber-400 text-sm mb-6" aria-label="5 gwiazdek">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 mb-8 leading-relaxed font-medium text-lg">"Zatrzasnęłam klucze przed wyjazdem. Otwarcie awaryjne zajęło Panom dosłownie chwilę, a zamek ocalał. Ogromny plus za przyjazd w środku nocy!"</p>
+                    <div class="mt-auto flex items-center gap-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center font-bold text-green-700 text-lg">A</div>
+                        <div>
+                            <p class="font-bold text-primary">Anna W.</p>
+                            <p class="text-sm text-slate-400">Police · Otwarcie awaryjne · Styczeń 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA FAQ -->
+    <section id="faq" class="py-28 bg-slate-50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20 flex flex-col items-center">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-6 tracking-tight">Najczęstsze pytania</h2>
+                <div class="w-16 h-1 bg-accent rounded-full mb-6 mx-auto"></div>
+                <p class="text-slate-500 max-w-2xl text-lg mx-auto">Zebraliśmy odpowiedzi na pytania, które najczęściej słyszymy od klientów.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="faq-item bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left font-bold text-primary hover:text-accent transition-colors" aria-expanded="false">
+                        <span>Czy wycena i dojazd na miejsce są bezpłatne?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-accent ml-4"></i>
+                    </button>
+                    <div class="faq-answer px-6">
+                        <p class="text-slate-500 leading-relaxed pb-6">Tak. Doradztwo, dojazd na miejsce pomiarów oraz przygotowanie wyceny są całkowicie bezpłatne. Płacisz dopiero za wykonany montaż lub naprawę — i to dopiero po zakończeniu prac.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left font-bold text-primary hover:text-accent transition-colors" aria-expanded="false">
+                        <span>Jaki jest średni czas dojazdu w przypadku awarii?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-accent ml-4"></i>
+                    </button>
+                    <div class="faq-answer px-6">
+                        <p class="text-slate-500 leading-relaxed pb-6">Pogotowie awaryjne działa 24 godziny na dobę, 7 dni w tygodniu. Staramy się dotrzeć do klienta jak najszybciej — w obrębie Szczecina i okolicznych miejscowości dojazd realizujemy w możliwie najkrótszym czasie.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left font-bold text-primary hover:text-accent transition-colors" aria-expanded="false">
+                        <span>Jaką gwarancję udzielacie na montaż?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-accent ml-4"></i>
+                    </button>
+                    <div class="faq-answer px-6">
+                        <p class="text-slate-500 leading-relaxed pb-6">Na wykonany montaż udzielamy gwarancji zgodnej z obowiązującymi przepisami. Dodatkowo sprzęt objęty jest gwarancją producenta. Jeśli w okresie gwarancyjnym wystąpi usterka wynikająca z montażu — naprawiamy ją bezpłatnie.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left font-bold text-primary hover:text-accent transition-colors" aria-expanded="false">
+                        <span>Czy montujecie sprzęt zakupiony u innego dostawcy?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-accent ml-4"></i>
+                    </button>
+                    <div class="faq-answer px-6">
+                        <p class="text-slate-500 leading-relaxed pb-6">Tak, podejmujemy się montażu oraz serwisu urządzeń zakupionych u innych dostawców. Wymaga to jednak wcześniejszej weryfikacji sprzętu — czy jest kompletny, sprawny i czy producent dopuszcza jego montaż przez autoryzowanego instalatora.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left font-bold text-primary hover:text-accent transition-colors" aria-expanded="false">
+                        <span>Czy można zdalnie sterować bramą z telefonu?</span>
+                        <i class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-accent ml-4"></i>
+                    </button>
+                    <div class="faq-answer px-6">
+                        <p class="text-slate-500 leading-relaxed pb-6">Tak. Instalujemy nowoczesne moduły Smart Home, które pozwalają sterować bramą, szlabanem lub drzwiami garażowymi za pomocą aplikacji w telefonie. Można również integrować system z pilotami, tagami RFID, czy czytnikami tablic rejestracyjnych.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA OBSZAR DZIAŁANIA -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-50 rounded-[2.5rem] p-10 md:p-16 border border-slate-100 text-center">
+                <h2 class="text-2xl md:text-4xl font-extrabold text-primary mb-4 tracking-tight">Obszar działania</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto mb-10 text-lg">Działamy na terenie Szczecina i okolicznych miejscowości. Pogotowie awaryjne obejmuje cały region.</p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="bg-white px-6 py-3 rounded-xl font-bold text-primary shadow-sm border border-slate-100 text-sm"><i class="fa-solid fa-location-dot text-accent mr-2"></i>Szczecin</span>
+                    <span class="bg-white px-6 py-3 rounded-xl font-bold text-primary shadow-sm border border-slate-100 text-sm"><i class="fa-solid fa-location-dot text-accent mr-2"></i>Police</span>
+                    <span class="bg-white px-6 py-3 rounded-xl font-bold text-primary shadow-sm border border-slate-100 text-sm"><i class="fa-solid fa-location-dot text-accent mr-2"></i>Stargard</span>
+                    <span class="bg-white px-6 py-3 rounded-xl font-bold text-primary shadow-sm border border-slate-100 text-sm"><i class="fa-solid fa-location-dot text-accent mr-2"></i>Goleniów</span>
+                    <span class="bg-white px-6 py-3 rounded-xl font-bold text-primary shadow-sm border border-slate-100 text-sm"><i class="fa-solid fa-location-dot text-accent mr-2"></i>Świnoujście</span>
+                    <span class="bg-white px-6 py-3 rounded-xl font-bold text-primary shadow-sm border border-slate-100 text-sm"><i class="fa-solid fa-location-dot text-accent mr-2"></i>Gryfino</span>
+                    <span class="bg-white px-6 py-3 rounded-xl font-bold text-primary shadow-sm border border-slate-100 text-sm"><i class="fa-solid fa-location-dot text-accent mr-2"></i>Kołbaskowo</span>
+                    <span class="bg-white px-6 py-3 rounded-xl font-bold text-primary shadow-sm border border-slate-100 text-sm"><i class="fa-solid fa-location-dot text-accent mr-2"></i>Dobra (pow. policki)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA KONTAKT I FORMULARZ -->
+    <section id="kontakt" class="py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-50 rounded-[2.5rem] shadow-xl overflow-hidden flex flex-col lg:flex-row border border-slate-100">
+                <div class="lg:w-2/5 bg-primary text-white p-6 sm:p-10 md:p-14 flex flex-col justify-center text-center lg:text-left relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl md:text-3xl font-extrabold mb-4 break-words hyphens-auto">Porozmawiajmy o sprzęcie</h3>
+                        <p class="text-slate-300 mb-12 leading-relaxed text-base md:text-lg font-light">Wyceniamy urządzenia, planujemy kompleksowe montaże i przyjmujemy zlecenia serwisowe 24 godziny na dobę.</p>
+                        <div class="space-y-8 flex flex-col items-center lg:items-start">
+                            <div class="flex flex-col lg:flex-row items-center gap-5 group cursor-pointer" onclick="window.location.href='tel:+48667223765'" role="link" tabindex="0" aria-label="Zadzwoń: +48 667 223 765">
+                                <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-xl text-accent group-hover:bg-accent group-hover:text-white transition-all duration-300 shadow-sm"><i class="fa-solid fa-phone"></i></div>
+                                <div class="text-center lg:text-left">
+                                    <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Infolinia / Pogotowie</p>
+                                    <p class="text-2xl font-bold">+48 667 223 765</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col lg:flex-row items-center gap-5 group cursor-pointer" onclick="window.location.href='mailto:smartservice@vp.pl'" role="link" tabindex="0" aria-label="Napisz e-mail: smartservice@vp.pl">
+                                <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-xl text-accent group-hover:bg-accent group-hover:text-white transition-all duration-300 shadow-sm"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="text-center lg:text-left">
+                                    <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Napisz do nas</p>
+                                    <p class="text-xl font-bold break-all">smartservice@vp.pl</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-3/5 p-6 sm:p-10 md:p-14 bg-white">
+                    <div class="mb-8 text-center sm:text-left">
+                        <h3 class="text-2xl font-bold text-primary mb-2">Formularz szybkiej wyceny</h3>
+                        <p class="text-slate-500">Odpisujemy zazwyczaj w ciągu kilku godzin.</p>
+                    </div>
+                    <form id="contact-form" action="https://formsubmit.co/smartservice@vp.pl" method="POST" enctype="multipart/form-data" class="space-y-6 text-left" novalidate>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Zgłoszenie WWW: Drzwi i Bramy Szczecin">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="field-name" class="block text-sm font-semibold text-slate-700 mb-2">Imię i nazwisko / Firma</label>
+                                <input id="field-name" type="text" name="Nazwa" required class="w-full px-5 py-3.5 bg-slate-50/50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-accent/50 focus:border-accent outline-none transition-all duration-300 placeholder-slate-400">
+                            </div>
+                            <div>
+                                <label for="field-phone" class="block text-sm font-semibold text-slate-700 mb-2">Numer telefonu</label>
+                                <input id="field-phone" type="tel" name="Telefon" required pattern="[0-9\\s+\\-]{9,}" class="w-full px-5 py-3.5 bg-slate-50/50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-accent/50 focus:border-accent outline-none transition-all duration-300 placeholder-slate-400" placeholder="np. 667 223 765">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="field-type" class="block text-sm font-semibold text-slate-700 mb-2">Czego dotyczy sprawa?</label>
+                            <select id="field-type" name="Rodzaj_Zgloszenia" required class="w-full px-5 py-3.5 bg-slate-50/50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-accent/50 focus:border-accent outline-none transition-all duration-300 cursor-pointer appearance-none text-slate-700">
+                                <option value="" disabled selected>-- Wybierz z listy --</option>
+                                <option value="Zakup_Automatyki">Zakup automatyki do bram</option>
+                                <option value="Zakup_Drzwi_Bram">Zakup bramy / drzwi</option>
+                                <option value="Montaz_Szlabanow">Montaż szlabanów</option>
+                                <option value="Awaryjne_Otwieranie">Awaryjne otwieranie</option>
+                                <option value="Serwis">Serwis i naprawa</option>
+                                <option value="Inne">Inne zapytanie</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="field-message" class="block text-sm font-semibold text-slate-700 mb-2">Wiadomość / Szczegóły usterki</label>
+                            <textarea id="field-message" name="Tresc" rows="4" class="w-full px-5 py-3.5 bg-slate-50/50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-accent/50 focus:border-accent outline-none transition-all duration-300 resize-none placeholder-slate-400" placeholder="Podaj przybliżone wymiary, markę napędu lub opisz usterkę..."></textarea>
+                        </div>
+                        <div>
+                            <label for="field-file" class="block text-sm font-semibold text-slate-700 mb-2">Dodaj zdjęcie usterki lub miejsca montażu (opcjonalnie)</label>
+                            <input id="field-file" type="file" name="Zalacznik" accept="image/*" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2.5 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-accent hover:file:bg-orange-100 transition-all cursor-pointer">
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white font-bold text-lg py-4 px-6 rounded-xl hover:bg-slate-800 transition-all duration-300 flex justify-center items-center gap-3 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 mt-4">
+                            <i class="fa-solid fa-paper-plane"></i> Wyślij zgłoszenie
+                        </button>
+                        <div id="form-success" class="hidden bg-green-50 border border-green-200 text-green-700 px-5 py-4 rounded-xl text-center font-semibold">
+                            <i class="fa-solid fa-circle-check mr-2"></i> Dziękujemy! Twoje zgłoszenie zostało wysłane. Odezwiemy się wkrótce.
+                        </div>
+                        <div id="form-error" class="hidden bg-red-50 border border-red-200 text-red-700 px-5 py-4 rounded-xl text-center font-semibold">
+                            <i class="fa-solid fa-circle-exclamation mr-2"></i> Wystąpił błąd. Sprawdź formularz lub zadzwoń: +48 667 223 765.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- STOPKA -->
+    <footer class="bg-primary text-slate-400 pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <a href="#" class="flex items-center text-xl font-extrabold text-white uppercase tracking-tight mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-accent to-orange-600 text-white rounded-xl flex items-center justify-center mr-3 shadow-md"><i class="fa-solid fa-door-open"></i></div>
+                        <span>Drzwi i Bramy <span class="text-accent">Szczecin</span></span>
+                    </a>
+                    <p class="text-sm leading-relaxed mb-6">Jesteśmy specjalistami od systemów bramowych, drzwi i automatyki. Zapewniamy fachowe doradztwo, sprzedaż, autoryzowany montaż i błyskawiczny serwis. Smart Service — Twój partner od 2011 roku.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Szybkie linki</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#uslugi" class="hover:text-accent transition-colors">Nasza Oferta</a></li>
+                        <li><a href="#dlaczego-my" class="hover:text-accent transition-colors">Dlaczego my</a></li>
+                        <li><a href="#realizacje" class="hover:text-accent transition-colors">Realizacje</a></li>
+                        <li><a href="#opinie" class="hover:text-accent transition-colors">Opinie Klientów</a></li>
+                        <li><a href="#faq" class="hover:text-accent transition-colors">FAQ</a></li>
+                        <li><a href="#kontakt" class="hover:text-accent transition-colors">Darmowa Wycena</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Kontakt</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-slate-500"></i><span>Szczecin, Police, Stargard<br/>i okoliczne miejscowości</span></li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-slate-500"></i><a href="tel:+48667223765" class="hover:text-white transition-colors">+48 667 223 765</a></li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-slate-500"></i><a href="mailto:smartservice@vp.pl" class="hover:text-white transition-colors">smartservice@vp.pl</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Godziny pracy</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex justify-between border-b border-slate-700/50 pb-2"><span>Pn - Pt:</span> <span class="text-white">08:00 - 18:00</span></li>
+                        <li class="flex justify-between border-b border-slate-700/50 pb-2 pt-2"><span>Sobota:</span> <span class="text-white">09:00 - 14:00</span></li>
+                        <li class="flex justify-between pt-2"><span class="text-emergency font-bold">Awarie:</span> <span class="text-white font-bold">24/7 (Całodobowo)</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                <p>&copy; 2025 Drzwi i Bramy Szczecin - Smart Service. Wszelkie prawa zastrzeżone.</p>
+                <div class="flex gap-4"><a href="#" class="hover:text-white transition-colors">Polityka Prywatności (RODO)</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PŁYWAJĄCY PRZYCISK AWARYJNY -->
+    <div class="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-50 flex items-center justify-center">
+        <div class="absolute w-full h-full bg-red-500 rounded-full animate-ping-slow opacity-60"></div>
+        <a href="tel:+48667223765" aria-label="Zadzwoń na pogotowie awaryjne: +48 667 223 765" class="relative bg-emergency text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-[0_4px_20px_rgba(239,68,68,0.5)] hover:bg-red-700 hover:scale-110 transition-all duration-300 border-2 border-white"><i class="fa-solid fa-phone"></i></a>
+    </div>
+
+    <!-- PRZYCISK POWROTU NA GÓRĘ -->
+    <button id="scroll-top" aria-label="Powrót na górę strony" class="fixed bottom-6 left-6 md:bottom-10 md:left-10 z-50 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-lg hover:bg-slate-800 hover:scale-110 transition-all duration-300 opacity-0 pointer-events-none"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                const isOpen = !menu.classList.contains('hidden');
+                btn.setAttribute('aria-expanded', isOpen);
+                menuIcon.className = isOpen ? 'fa-solid fa-xmark text-2xl' : 'fa-solid fa-bars text-2xl';
+            });
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    btn.setAttribute('aria-expanded', 'false');
+                    menuIcon.className = 'fa-solid fa-bars text-2xl';
+                });
+            });
+
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) { navbar.classList.add('shadow-md'); }
+                else { navbar.classList.remove('shadow-md'); }
+            });
+
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sectionMap = {};
+            navLinks.forEach(link => { sectionMap[link.getAttribute('href').substring(1)] = link; });
+            const sectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(l => l.classList.remove('nav-link-active'));
+                        const activeLink = sectionMap[entry.target.id];
+                        if (activeLink) activeLink.classList.add('nav-link-active');
+                    }
+                });
+            }, { rootMargin: '-40% 0px -55% 0px' });
+            sections.forEach(s => sectionObserver.observe(s));
+
+            const scrollTopBtn = document.getElementById('scroll-top');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) { scrollTopBtn.classList.remove('opacity-0', 'pointer-events-none'); }
+                else { scrollTopBtn.classList.add('opacity-0', 'pointer-events-none'); }
+            });
+            scrollTopBtn.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+            const counters = document.querySelectorAll('.counter');
+            const counterObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const el = entry.target;
+                        const target = parseInt(el.dataset.target);
+                        const suffix = el.dataset.suffix || '';
+                        let current = 0;
+                        const increment = target / 60;
+                        const update = () => {
+                            current += increment;
+                            if (current < target) { el.textContent = Math.floor(current) + suffix; requestAnimationFrame(update); }
+                            else { el.textContent = target + suffix; }
+                        };
+                        update();
+                        counterObserver.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.5 });
+            counters.forEach(c => counterObserver.observe(c));
+
+            document.querySelectorAll('.faq-toggle').forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const item = toggle.closest('.faq-item');
+                    const isOpen = item.classList.contains('open');
+                    document.querySelectorAll('.faq-item').forEach(i => {
+                        i.classList.remove('open');
+                        i.querySelector('.faq-toggle').setAttribute('aria-expanded', 'false');
+                    });
+                    if (!isOpen) { item.classList.add('open'); toggle.setAttribute('aria-expanded', 'true'); }
+                });
+            });
+
+            const form = document.getElementById('contact-form');
+            const successMsg = document.getElementById('form-success');
+            const errorMsg = document.getElementById('form-error');
+
+            form.addEventListener('submit', (e) => {
+                const name = form.querySelector('[name="Nazwa"]').value.trim();
+                const phone = form.querySelector('[name="Telefon"]').value.trim();
+                const type = form.querySelector('[name="Rodzaj_Zgloszenia"]').value;
+
+                if (!name || !phone || !type) {
+                    e.preventDefault();
+                    errorMsg.classList.remove('hidden');
+                    setTimeout(() => errorMsg.classList.add('hidden'), 5000);
+                    return;
+                }
+                successMsg.classList.remove('hidden');
+                form.querySelector('button[type="submit"]').disabled = true;
+                form.querySelector('button[type="submit"]').innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Wysyłanie...';
+            });
+        });
+    </script>
+</body>
+</html>
